@@ -1,12 +1,13 @@
 const socket = io('/')
-// const PORT = process.env.PORT || 3001; // error
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-    host: '/',
-    port: '3001'
+    secure: true, 
+    // host: '/',
+    host: 'novelin-zoom-peerjs-server.herokuapp.com',
+    port: 443
 })
 const myVideo = document.createElement('video')
-// myVideo.muted = true
+myVideo.muted = true
 const peers = {}
 navigator.mediaDevices.getUserMedia({
     video: true,
