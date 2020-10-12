@@ -2,12 +2,14 @@
   "name": "zoom-clone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js",
+    "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hary Suryanto",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.5",
