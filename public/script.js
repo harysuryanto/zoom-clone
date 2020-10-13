@@ -3,7 +3,8 @@ const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
     secure: true, 
     // host: '/', // for run in local
-    host: 'novelin-zoom-peerjs-server.herokuapp.com',
+    // host: 'novelin-zoom-peerjs-server.herokuapp.com',
+    host: 'novelin-peerjs-server.herokuapp.com',
     port: 9000
 })
 const myVideo = document.createElement('video')
