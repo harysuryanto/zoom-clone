@@ -1,11 +1,12 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-    secure: true, 
+    // secure: true, 
     // host: '/', // for run in local
     // host: 'novelin-zoom-peerjs-server.herokuapp.com',
     host: 'novelin-peerjs-server.herokuapp.com',
-    port: 28194
+    port: 57171
+    // port: 443
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
