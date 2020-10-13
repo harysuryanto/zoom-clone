@@ -4,7 +4,7 @@ const myPeer = new Peer(undefined, {
     secure: true, 
     // host: '/', // for run in local
     host: 'novelin-zoom-peerjs-server.herokuapp.com',
-    port: 443
+    port: 9000
 })
 const myVideo = document.createElement('video')
 myVideo.muted = true
